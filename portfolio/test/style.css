@@ -1,0 +1,57 @@
+body{
+    background-color: aliceblue;
+}
+
+.main{
+    background-color: black;
+    width: 900px;
+    height: 900px;
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.main p{
+    font-size: 80px;
+    color: greenyellow;
+    animation-name: animation2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animation{
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: greenyellow;
+    }
+    100%{
+        background-color: black;
+    }
+}
+@keyframes animation2{
+    0%{
+        color: greenyellow;
+    }
+    50%{
+        color: black;
+    }
+    100%{
+        color: greenyellow;
+    }
+}
+
+@media (min-width: 500px){
+    body{
+        background-color: black;
+    }
+}
+@media (min-width: 1000px){
+    body{
+        background-color: greenyellow;
+    }
+}
+@media (min-width: 1501px){
+    body{
+        background-color: white;
+    }
+}
